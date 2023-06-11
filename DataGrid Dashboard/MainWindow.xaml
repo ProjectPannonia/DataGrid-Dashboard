@@ -49,10 +49,46 @@
                         
                         <!-- Menu Buttons -->
                         <StackPanel DockPanel.Dock="Top">
+                            <!-- Dashboard -->
                             <Button Style="{StaticResource menuButton}">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial />
+                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Dashboard" />
+                                </StackPanel>
+                            </Button>
+                            <!-- Events -->
+                            <Button Style="{StaticResource menuButton}">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Icon:PackIconMaterial Kind="CalendarClock" Style="{StaticResource menuButtonIcon}"/>
+                                        <TextBlock Text="Events" />
+                                    </StackPanel>
+                            </Button>
+                            <!-- Members -->
+                            <Button Style="{StaticResource menuButton}" Background="#7b5cd6">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="AccountMultipleOutline" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Members" />
+                                </StackPanel>
+                            </Button>
+                            <!-- Wallet -->
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="CashMultiple" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Wallet" />
+                                </StackPanel>
+                            </Button>
+                            <!-- Messages -->
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="ForumOutline" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Messages" />
+                                </StackPanel>
+                            </Button>
+                            <!-- Logout -->
+                            <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="15 0">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Logout" />
                                 </StackPanel>
                             </Button>
                         </StackPanel>
@@ -62,6 +98,9 @@
                 </Border>
                 
             </Grid>
+            
+            <!-- Main Section -->
+            
         </Grid>
     </Border>
 </Window>
