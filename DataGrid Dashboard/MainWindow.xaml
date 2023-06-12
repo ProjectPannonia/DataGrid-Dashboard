@@ -127,9 +127,26 @@
                                            Margin="0 0 15 0" Foreground="#b0b9c6" HorizontalAlignment="Right" />
                 </Grid>
                 <!-- Top Buttons -->
-                <Button >
-                    
+                <Button Style="{StaticResource topButton}" Margin="0 0 20 0" Background="#dcdcdc" HorizontalAlignment="Right">
+                    <Icon:PackIconMaterial Kind="Cog" />
                 </Button>
+                
+                <Button Style="{StaticResource topButton}" Margin="0 0 55 0" HorizontalAlignment="Right">
+                    <Icon:PackIconMaterial Kind="Bell" />
+                </Button>
+            
+                <!-- Page Title -->
+                <TextBlock Text="Members" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0 20 0 0"
+                           HorizontalAlignment="Left" Foreground="#121518" />
+
+                <!-- Add Button -->
+                <Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Icon:PackIconMaterial Kind="Plus" VerticalAlignment="Center" Width="11" Height="11" Margin="0 1 8 0"/>
+                        <TextBlock Text="Add New Member" />
+                    </StackPanel>
+                </Button>
+                
             </Grid>
         </Grid>
     </Border>
