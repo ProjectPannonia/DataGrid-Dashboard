@@ -177,7 +177,8 @@
                 <!-- Members Datagrid -->
                 
                 <!-- Pagination Section -->
-                <Border Grid.Row="6" HorizontalAlignment="Right" >
+                <Border Grid.Row="6" HorizontalAlignment="Right" BorderBrush="#dee4ec" BorderThickness="1"
+                        CornerRadius="5" Padding="5" Background="White" Margin="0 10 10 10">
                     
                 </Border>
                 
